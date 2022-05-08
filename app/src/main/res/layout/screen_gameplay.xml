@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:id="@+id/gameplay_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/givCity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/asset_bg_city1"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintHeight_percent=".90"
+        app:layout_constraintHeight_default="percent"
+        android:scaleType="fitXY"
+        tools:ignore="MissingConstraints" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPause"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".05"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintWidth_percent=".24"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/asset_button_pause1"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:id="@+id/floor1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/asset_floor"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent=".10"
+        app:layout_constraintHeight_default="percent"
+        android:scaleType="fitXY"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:id="@+id/floor2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/design_default_color_error"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent=".10"
+        app:layout_constraintHeight_default="percent"
+        android:scaleType="fitXY"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:id="@+id/life1"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:background="@drawable/asset_heart"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:id="@+id/life2"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:background="@drawable/asset_heart"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:id="@+id/life3"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:background="@drawable/asset_heart"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SCORE: 0"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingConstraints"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
